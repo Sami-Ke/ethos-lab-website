@@ -6,13 +6,13 @@ import LottieAnimation from "./lottie-animation"
 export default function AnimatedHero() {
   return (
     <section className="container flex min-h-[calc(100vh-3.5rem)] max-w-screen-2xl flex-col items-center justify-center space-y-8 py-24 text-center md:py-32">
-      <div className="space-y-4">
-        <div className="mb-4">
+      <div className="space-y-2">
+        <div className="mb-2">
           <span className="text-lg font-medium text-blue-400">無限進步・勇於創新</span>
         </div>
 
-        {/* AI/Tech 動畫 */}
-        <div className="mb-8">
+        {/* AI/Tech 動畫 - 暫時隱藏以減少間隔 */}
+        {/* <div className="mb-8">
           <LottieAnimation
             src="https://lottie.host/4d0d5c2b-8b5e-4c8a-9c4a-2e8f7b1a3d6e/9KjBxXzQqM.json"
             className="w-64 h-64 mx-auto"
@@ -20,9 +20,9 @@ export default function AnimatedHero() {
             autoplay={true}
             speed={0.8}
           />
-        </div>
+        </div> */}
 
-        <h1 className="bg-gradient-to-br from-white from-30% via-white/90 to-white/70 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl md:text-6xl lg:text-7xl">
+        <h1 className="bg-gradient-to-br from-white from-30% via-white/90 to-white/70 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl md:text-6xl lg:text-7xl mt-4">
           AI 數位轉型
           <br />
           <span className="text-blue-400">加速器</span>

@@ -11,7 +11,7 @@ This is a Next.js website for Ethos Lab (無限進步・勇於創新), a Taiwan-
 ### Core Commands
 - `pnpm dev` - Start development server
 - `pnpm build` - Build for production
-- `pnpm start` - Start production server  
+- `pnpm start` - Start production server
 - `pnpm lint` - Run Next.js linting
 
 ### Package Management
@@ -46,29 +46,11 @@ This project uses **pnpm** as the package manager (evidenced by pnpm-lock.yaml).
 - `components/ui/` - shadcn/ui component library (reusable UI primitives)
 - `app/components/` - Legacy component folder (consider migrating to /components)
 
-#### Animation System Architecture
-The site features a sophisticated multi-layer animation system:
-
-1. **Background Layer (z-0)**: `LetterGlitch` component creates animated character matrix
-   - Canvas-based rendering with configurable colors, speed, and vignettes
-   - Smooth color transitions and character morphing
-   - Responsive grid system that adapts to viewport
-
-2. **Interactive Layer (z-30)**: `MouseMoveEffect` creates cursor-following radial gradient
-   - Real-time mouse tracking with radial gradient effects
-   - Blue glow that follows cursor movement
-
-3. **Content Layer (z-10)**: All actual page content and components
-   - Lottie animations for hero sections
-   - Component-based UI with shadcn/ui primitives
-
-#### Form System Architecture
-- **ConsultationForm**: Complex multi-step form with local state management
-  - Industry-specific dropdowns (manufacturing, retail, logistics, etc.)
-  - Budget ranges from 50k to 500k+ TWD
-  - Timeline selection and preferred consultation times
-  - Form validation with required fields and terms agreement
-  - Simulated submission with loading states and confirmation screens
+#### Key Features
+- **Animated sections**: AnimatedHero, AnimatedFeatures, AnimatedSolutions
+- **Interactive elements**: MouseMoveEffect background interaction
+- **Lottie animations**: LottieAnimation component for complex motion graphics
+- **Responsive design**: Mobile-first approach with Tailwind breakpoints
 
 ### Design System
 - **Color scheme**: Dark mode by default with blue (#3b82f6) primary and purple (#8b5cf6) accent
@@ -93,18 +75,6 @@ The site content is primarily in Traditional Chinese, with some English elements
 - Leverage Radix UI primitives for accessibility
 - Use proper TypeScript typing with React.ComponentProps patterns
 
-### Animation Development
-- **Lottie animations**: External JSON files loaded from lottie.host
-- **Canvas animations**: Use refs for performance-critical animations
-- **CSS animations**: Prefer Tailwind's animation utilities for simple transitions
-- **Layer management**: Follow the established z-index hierarchy (background z-0, content z-10, interactive z-30)
-
-### Form Development
-- Use controlled components with local state for complex forms
-- Implement proper loading states and validation feedback
-- Follow the established pattern in ConsultationForm for multi-section forms
-- Use shadcn/ui form components (Select, Input, Textarea, Checkbox) consistently
-
 ### Styling Approach
 - Tailwind-first approach with design system variables
 - Dark mode implementation using CSS variables
@@ -120,23 +90,11 @@ The site content is primarily in Traditional Chinese, with some English elements
 
 ### Next.js Specific
 - App Router file-based routing
-- Server and Client Components properly separated (use "use client" for interactive components)
+- Server and Client Components properly separated
 - Image optimization disabled (unoptimized: true)
 - Metadata API for SEO optimization
 
 ## Common Issues
-
-### Build & Development
 - **Build errors**: TypeScript and ESLint errors are ignored during builds (ignoreBuildErrors: true)
 - **Image optimization**: Disabled in next.config.mjs, may need manual optimization
-- **Animation performance**: Canvas-based animations require proper cleanup in useEffect
-
-### Animation Troubleshooting
-- **Lottie animations**: External JSON files loaded from lottie.host, ensure network connectivity
-- **Canvas rendering**: Use devicePixelRatio for sharp rendering on high-DPI displays
-- **Memory leaks**: Always cleanup animation frames and event listeners in useEffect return functions
-
-### Form Handling
-- **State management**: Complex forms use local state rather than external libraries
-- **Validation**: Client-side validation only, no backend integration currently
-- **Submission**: Forms use simulated submission (setTimeout), replace with actual API calls when backend is ready
+- **Lottie animations**: External JSON files loaded from lottie.host, ensure network connectivity for animations

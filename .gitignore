@@ -1,69 +1,27 @@
-# Dependencies
-node_modules/
-.pnp
-.pnp.js
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Production
-build/
-dist/
-out/
+# dependencies
+/node_modules
 
-# Next.js
-.next/
-.swc/
+# next.js
+/.next/
+/out/
 
-# Environment variables
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# production
+/build
 
-# Vercel
-.vercel
-
-# TypeScript
-*.tsbuildinfo
-
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
-
-# Coverage directory used by tools like istanbul
-coverage/
-*.lcov
-
-# nyc test coverage
-.nyc_output
-
-# Logs
-logs
-*.log
+# debug
 npm-debug.log*
-pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-lerna-debug.log*
+.pnpm-debug.log*
 
-# OS
-.DS_Store*
-ehthumbs.db
-Thumbs.db
+# env files
+.env*
 
-# VSCode
-.vscode/
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+# vercel
+.vercel
 
-# IDE
-*.swp
-*.swo
-*~
-
-# Temporary files
-*.tmp
-*.temp
+# typescript
+*.tsbuildinfo
+next-env.d.ts

@@ -3,7 +3,18 @@
     "allow": [
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(gh repo create:*)"
+      "Bash(gh repo create:*)",
+      "WebFetch(domain:reactbits.dev)",
+      "Bash(pnpm run lint:*)",
+      "Bash(npm run lint)",
+      "Bash(npm run:*)",
+      "Bash(npx next lint:*)",
+      "Bash(npm install)",
+      "Bash(ls:*)",
+      "Bash(mv:*)",
+      "Bash(npm install:*)",
+      "Bash(find:*)",
+      "Bash(timeout 10s npm run dev)"
     ],
     "deny": []
   }

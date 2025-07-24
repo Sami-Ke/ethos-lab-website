@@ -1,5 +1,6 @@
 import Navbar from "@/components/navbar"
 import AnimatedHero from "@/components/animated-hero"
+import LetterGlitchSection from "@/components/letter-glitch-section"
 import AnimatedFeatures from "@/components/animated-features"
 import AnimatedSolutions from "@/components/animated-solutions"
 import CTA from "@/components/cta"
@@ -30,6 +31,7 @@ export default function Home() {
       <div className="relative z-10">
         <Navbar />
         <AnimatedHero />
+        <LetterGlitchSection />
         <AnimatedFeatures />
         <AnimatedSolutions />
         <CTA />
