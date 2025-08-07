@@ -5,19 +5,22 @@ import AnimatedFeatures from "@/components/animated-features"
 import AnimatedSolutions from "@/components/animated-solutions"
 import CTA from "@/components/cta"
 import Footer from "@/components/footer"
-import LetterGlitch from "@/components/letter-glitch"
+import { Galaxy } from "react-stars-particles"
 
 export default function Home() {
   return (
     <div className="relative min-h-screen">
-      {/* Letter Glitch Background Animation */}
+      {/* Galaxy Background Animation */}
       <div className="pointer-events-none fixed inset-0 z-0">
-        <LetterGlitch
-          glitchColors={['#3b82f6', '#8b5cf6', '#10b981', '#1f2937']}
-          glitchSpeed={80}
-          outerVignette={true}
-          centerVignette={false}
-          smooth={true}
+        <Galaxy
+          quantity={100}
+          staticity={50}
+          ease={50}
+          size={0.4}
+          refresh={1}
+          color="#3b82f6"
+          vx={0}
+          vy={0}
         />
       </div>
 
