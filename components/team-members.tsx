@@ -4,14 +4,14 @@ const teamMembers = [
   {
     name: "柯兆聲 (Sami)",
     role: "聯合創辦人 & CEO",
-    image: "/images/team/sami.png",
+    image: "/images/team/sami.jpg",
     description: "專注整合、系統化、結構規劃以及解決方案提供。精通於流程自動化、CRM 系統、SEO 與數據分析。",
     expertise: ["專案管理與執行落地", "流程自動化", "CRM 系統", "SEO 與數據分析"],
   },
   {
     name: "鄭宇哲 (MØMO)",
     role: "聯合創辦人 & CSO",
-    image: "/images/team/momo.png",
+    image: "/images/team/momo.jpg",
     description:
       "多年的跨產業品牌、營運與管理經驗，擅長市場策略、商業開發與資源整合，專注於為產業夥伴設計全方位數位升級方案。",
     expertise: ["策略與市場導向", "品牌營運", "商業開發", "資源整合"],
@@ -19,7 +19,7 @@ const teamMembers = [
   {
     name: "LYF",
     role: "聯合創辦人 & CTO",
-    image: "/images/team/lyf.png",
+    image: "/images/team/lyf.jpg",
     description:
       "精通多種程式語言與自動化開發技術，專注於複雜系統設計與技術架構整合，確保每一項解決方案具備前瞻性與實用性。",
     expertise: ["技術創新與產品落地", "系統架構設計", "自動化開發", "技術整合"],

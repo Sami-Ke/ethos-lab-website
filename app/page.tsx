@@ -5,18 +5,21 @@ import AnimatedFeatures from "@/components/animated-features"
 import AnimatedSolutions from "@/components/animated-solutions"
 import CTA from "@/components/cta"
 import Footer from "@/components/footer"
-import GalaxyBackground from "@/components/galaxy-background"
+import Galaxy from "@/components/reactbits-galaxy"
 
 export default function Home() {
   return (
     <div className="relative min-h-screen">
       {/* Galaxy Background Animation */}
       <div className="pointer-events-none fixed inset-0 z-0">
-        <GalaxyBackground
-          starCount={100}
-          starColor="#3b82f6"
-          speed={0.5}
+        <Galaxy
+          hueShift={220}
+          density={0.8}
+          speed={1.2}
           mouseInteraction={true}
+          glowIntensity={0.4}
+          twinkleIntensity={0.5}
+          transparent={true}
         />
       </div>
 
